@@ -1,17 +1,20 @@
 
 
 const submit = document.getElementById("button1");
+let cat=""
 const getValue = (value) => {
-  return value;
+  cat=value
+  
 };
 
 let cnt=0
 
 
 function createExpense(idx,name,expense){
-    const exname = document.createTextNode(name.value);
+    const exname = document.createTextNode(`Name - ${name.value}  `);
     const space = document.createTextNode("  ");
-    const amount = document.createTextNode(expense.value);
+    const amount = document.createTextNode(`Amount - ${expense.value}  `);
+    const catagory=document.createTextNode(`Category - ${cat}`)
    
   
     const ul = document.getElementById("listitems");
@@ -36,11 +39,15 @@ function createExpense(idx,name,expense){
     newlist.style.justifyContent = "center";
     newlist.style.padding = "10px";
     newlist.style.gap = "20px";
+    newlist.style.fontSize="18px"
   
     newlist.appendChild(exname);
     newlist.appendChild(space);
     newlist.appendChild(space);
     newlist.appendChild(amount);
+    newlist.appendChild(space);
+    newlist.appendChild(space);
+    newlist.appendChild(catagory)
   
   
     newlist.appendChild(delbtn);

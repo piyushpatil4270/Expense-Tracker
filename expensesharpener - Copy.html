@@ -9,21 +9,24 @@
         .custom-btn1{
         background-color: #4BC54B;
         }
+        .border2{
+            border-width: 2px;
+        }
     </style>
 </head>
-<body>
-    <div class="d-flex justify-content-center gap-5">
+<body >
+    <div class="d-flex justify-content-center gap-5 mt-2">
     <label for="name">
-        <span>Name</span>
+        <span class="fs-5" >Description</span>
     </label>
-    <input id="name"/>
+    <input class="rounded-2 border-none" id="name"/>
     <label for="expense">
-        <span>Expense</span>
+        <span class="fs-5" >Amount</span>
     </label>
-    <input id="expense"/>
+    <input class="rounded-2 border2" id="expense"/>
     <div class="dropdown">
         <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Catagory
+            <span class="fs-5" >Category</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" onclick="getValue('Movie')" href="#">Movie</a>
