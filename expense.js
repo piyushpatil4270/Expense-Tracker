@@ -40,6 +40,7 @@ function createExpense(idx,name,expense){
     newlist.style.padding = "10px";
     newlist.style.gap = "20px";
     newlist.style.fontSize="18px"
+    newlist.className="custom_list"
   
     newlist.appendChild(exname);
     newlist.appendChild(space);
