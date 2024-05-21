@@ -22,10 +22,16 @@
             margin-bottom: 5px;
             margin-left: 5px;
             margin-right: 5px;
+            border-radius: 10px;
+        }
+        .custom-bg{
+            background-color: #EEF1E9;
+           
         }
     </style>
 </head>
-<body >
+<body class="custom-bg" >
+    <div class="">
     <div class="d-flex justify-content-center gap-5 mt-2">
     <label for="name">
         <span class="fs-5" >Description</span>
@@ -40,9 +46,7 @@
     <div class="input-group mb-3">
         
         <input type="text" class="form-control custom-width" id="expense" aria-label="Amount (to the nearest dollar)">
-        <div class="input-group-append">
-          <span class="input-group-text">.00</span>
-        </div>
+        
       </div>
     <div class="dropdown">
         <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,6 +64,7 @@
 <div class="">
     <ul id="listitems" class="d-flex flex-column justify-content-center align-items-center"></ul>
 
+</div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="expense.js"></script>
